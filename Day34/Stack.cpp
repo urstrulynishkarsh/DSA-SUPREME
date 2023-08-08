@@ -1,8 +1,8 @@
-#include <iostream>
-#include <stack>
+#include<iostream>
+#include<stack>
 using namespace std;
-int main()
-{
+
+int main(){
     stack<int> st;
 
     // insertion
@@ -10,25 +10,41 @@ int main()
     st.push(20);
     st.push(30);
     st.push(40);
-    st.push(50);
 
-    // while (!st.empty())
-    // {
-    //     cout << st.top() << " ";
-    //     st.pop();
-    // }
-    // cout << endl;
 
-    // remove
+    // printing thh element of stack
+    
+    while(!st.empty())
+    {
+        cout<<st.top()<<endl;
+        st.pop();
+    }
+
+    // deletion
+
     st.pop();
     st.pop();
 
-    // peek
-    cout << "top of the value is:" << st.top();
-    cout << endl;
-    // empty or not
-    cout << "stack is empty or not:" << st.empty() << endl;
 
-    // sizeofset
-    cout << "size of this stack is:" << st.size();
+
+    // check element on top
+
+    cout<<"top element is: "<<st.top()<<endl;
+
+
+    // size of stack is
+
+    cout<<"size of stack is: "<<st.size()<<endl;
+
+
+    // empty
+    if(st.empty())
+    {
+        cout<<"stack is Empty";
+    }
+    else{
+        cout<<"stack is not empty";
+    }
+
+
 }

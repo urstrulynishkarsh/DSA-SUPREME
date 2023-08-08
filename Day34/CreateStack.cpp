@@ -51,6 +51,7 @@ public:
         if (top == -1)
         {
             cout << "stack is underflowed!";
+            
         }
         else
         {
@@ -76,17 +77,21 @@ public:
 
 int main()
 {
-    Stack *s = new Stack(10);
+    // Stack *s = new Stack(10);
+    Stack s(10);
 
-    s->push(10);
-    s->push(20);
-    s->push(30);
-    while (!s->isempty())
+    s.push(10);
+    s.push(20);
+    s.push(30);
+    while (!s.isempty())
     {
-        cout << s->peek();
-        s->pop();
+        cout << s.peek()<<' ';
+        s.pop();
     }
     cout << endl;
 
-    delete[] s;
+
+    return 0;
+
+    // delete[] s;
 }

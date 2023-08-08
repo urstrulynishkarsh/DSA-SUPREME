@@ -25,7 +25,6 @@ void sortedstack(stack<int> &st)
 {
     if (st.empty())
     {
-
         return;
     }
     int topelement = st.top();

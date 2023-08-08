@@ -65,6 +65,8 @@ void mergeSort(vector<int> &v, int s, int e)
     {
         return;
     }
+
+    // mid element
     int mid = s + (e - s) / 2;
     // sorted by recursion on mid
     mergeSort(v, mid + 1, e);

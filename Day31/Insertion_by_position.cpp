@@ -21,6 +21,7 @@ public:
         cout << "delete memory";
     }
 };
+
 void print(Node *Head)
 {
     Node *temp = Head;
@@ -30,6 +31,7 @@ void print(Node *Head)
         temp = temp->next;
     }
 }
+
 int findLength(Node *Head)
 {
     int len = 0;
@@ -42,6 +44,7 @@ int findLength(Node *Head)
     }
     return len;
 }
+
 void insertionAtHead(Node *&Head, Node *&Tail, int data)
 {
     // create a new node in which head and tail are same place

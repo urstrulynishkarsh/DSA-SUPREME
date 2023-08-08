@@ -6,11 +6,11 @@ public:
     int data;
     Node *next;
 
-    // Node()
-    // {
-    //     this->data = 0;
-    //     this->next = NULL;
-    // }
+    Node()
+    {
+        this->data = 0;
+        this->next = NULL;
+    }
     Node(int data)
     {
         this->data = data;
@@ -46,17 +46,17 @@ Node *reverseKNodes(Node *&first, int k)
         cout << "there is element inside LinkedList so we can't find it.";
         return NULL;
     }
-    int len = findLength(first);
-    if (len < k)
-    {
-        cout << "Enter valid value for k: ";
-        return first;
-    }
+    // int len = findLength(first);
+    // if (k>len)
+    // {
+    //     // cout << "Enter valid value for k: ";
+    //     return first;
+    // }
     Node *prev = NULL;
     Node *curr = first;
     Node *forward = curr->next;
     int count = 0;
-    while (count < k)
+    while (count < k && curr != NULL)
     {
         forward = curr->next;
         curr->next = prev;
@@ -89,8 +89,8 @@ int main()
 
     print(first);
     cout << endl;
-    cout << "reverse K nodes of the linkedlist is: ";
+    cout << "reverse K nodes of the linkedlist is: "<<endl;
 
-    first = reverseKNodes(first, 3);
+    first = reverseKNodes(first, 4);
     print(first);
 }

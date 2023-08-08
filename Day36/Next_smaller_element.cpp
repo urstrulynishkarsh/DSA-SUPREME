@@ -8,10 +8,12 @@ void nextSmallerElement(stack<int> &st, vector<int> &ans, vector<int> &v)
     for (int i = v.size() - 1; i >= 0; i--)
     {
         int current = v[i];
+        // bade number ko pop karo
         while (st.top() >= current)
         {
             st.pop();
         }
+        // ab answer mai store kara lo
         ans[i] = st.top();
         st.push(current);
     }

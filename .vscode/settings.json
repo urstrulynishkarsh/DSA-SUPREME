@@ -1,5 +1,9 @@
 {
-    "files.associations": {
-        "iostream": "cpp"
+    "workbench.colorTheme": "Default Dark Modern",
+    "chatgpt.lang": "en",
+    "editor.minimap.enabled": false,
+    "code-runner.runInTerminal": true,
+    "[cpp]": {
+        "standard": "c++17"
     }
 }
