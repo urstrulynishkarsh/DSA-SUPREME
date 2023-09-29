@@ -12,6 +12,6 @@ int main()
     cout << &p << endl;
     cout << q << endl;
     cout << *q << endl;
-    cout << **q << endl;
+    cout << (**q) << endl;
     cout << &q << endl;
 }

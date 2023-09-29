@@ -6,10 +6,10 @@ class abc{
    
 
     public:
-     int x;
+    int x;
     int *y;
 
-abc()
+    abc()
     {
         x=0;
         y=new int(0);
