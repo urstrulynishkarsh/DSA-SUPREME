@@ -4,12 +4,11 @@ using namespace std;
 
 int main()
 {
-
     int n;
-    cout<<"Enter Number of Nodes: ";
+    cout<<"Enter the number of Nodes: ";
     cin>>n;
 
-    vector<vector<int> > Adj(n,vector<int> (n,0));
+    vector<vector<int> > adjacencyMatrix(n,vector<int>(n,0));
 
     int e;
     cout<<"Enter the number of edges: ";
@@ -19,15 +18,18 @@ int main()
     {
         int u,v;
         cin>>u>>v;
-        Adj[u][v]=1;
+        // mark  by 1 for edge connection
+        adjacencyMatrix[u][v]=1;
     }
 
-    // printing the adjacency matrix
+    // printing the matrix
+
+    cout<<"Printing the adjacency matrix"<<endl;
     for(int i=0;i<n;i++)
     {
         for(int j=0;j<n;j++)
         {
-            cout<<Adj[i][j]<<" ";
+            cout<<adjacencyMatrix[i][j]<<" ";
         }
         cout<<endl;
     }

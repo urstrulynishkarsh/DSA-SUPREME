@@ -9,6 +9,7 @@
     "C_Cpp.autocompleteAddParentheses": true,
     "files.associations": {
         "*.cpp": "cpp",
-        "ostream": "cpp"
+        "ostream": "cpp",
+        "iostream": "cpp"
     }
 }
