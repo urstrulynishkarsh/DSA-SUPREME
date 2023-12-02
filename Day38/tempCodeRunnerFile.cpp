@@ -1,6 +1,6 @@
-cout<<"Before Reversing the queue: "<<endl;
-//      while(!q.empty())
-//      {
-//         cout<<q.front()<<" ";
-//         q.pop();
-//      }
+ // if(n&1)
+    // {
+    //     int element=q1.front();
+    //     q1.pop();
+    //     q1.push(element);
+    // }

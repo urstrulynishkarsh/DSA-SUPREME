@@ -2,7 +2,7 @@
 using namespace std;
 
 
-void SetithBit(int n,int i){
+void  ChangeithBit(int n,int i){
     int mask=~(1<<i);
     int ans=n&mask;
     cout<<"After clearing ith bit: "<<ans;
@@ -18,7 +18,6 @@ int main()
     int i;
     cout<<"enter the find set ith bit";
     cin>>i;
-    SetithBit(n,i);
+    ChangeithBit(n,i);
     
-
 }

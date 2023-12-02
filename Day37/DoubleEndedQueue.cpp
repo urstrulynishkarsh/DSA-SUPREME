@@ -18,7 +18,7 @@ class Deque{
     void pushRear(int data)
     {
         // full condition
-        if(front==0 && rear==size-1)
+      if((front==0 && rear==size-1) || rear==(front-1)%size)
         {
             cout<<"Queue is full";
             return;
@@ -38,7 +38,7 @@ class Deque{
     }
     void pushFront(int data)
     {
-        if(front==0 && rear==size-1)
+         if((front==0 && rear==size-1) || rear==(front-1)%size)
         {
             cout<<"Queue is full";
             return;

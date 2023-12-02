@@ -46,12 +46,12 @@ Node *reverseKNodes(Node *&first, int k)
         cout << "there is element inside LinkedList so we can't find it.";
         return NULL;
     }
-    // int len = findLength(first);
-    // if (k>len)
-    // {
-    //     // cout << "Enter valid value for k: ";
-    //     return first;
-    // }
+    int len = findLength(first);
+    if (k>len)
+    {
+        // cout << "Enter valid value for k: ";
+        return first;
+    }
     Node *prev = NULL;
     Node *curr = first;
     Node *forward = curr->next;

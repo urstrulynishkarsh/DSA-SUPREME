@@ -61,7 +61,8 @@ int main(){
     third->next = fourth;
     fourth->next = fifth;
     fifth->next = sixth;
-    sixth->next = NULL;
+    sixth->next=third;
+   
 
     cout<<isCircular(first);
 }

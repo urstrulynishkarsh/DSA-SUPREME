@@ -17,9 +17,10 @@ class Queue{
     }
     void push(int data)
     {
-        if((front=0 && rear==size-1) ||(rear==front-1))
+        if(rear==(front-1)%(size-1))
         {
             cout<<"Queue is full";
+            return;
         }
         else if(front==-1){
             front=rear=0;
@@ -65,6 +66,9 @@ class Queue{
 
 };
 int main(){
-    Queue q(10);
+    Queue q(2);
+    q.push(1);
+    q.push(3);
+
 
 }
